@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+}
+
+nav {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    background-color: rgb(38, 12, 65);
+    justify-content: space-evenly;
+    padding-right: 5rem;
+}
+
+ul li {
+    display: inline;
+}
+
+nav ul {
+    padding-top: 4.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+
+}
+
+.main {
+    width: 100%;
+    height: 24rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+
+}
+
+img {
+    height: 24rem;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+
+}
+
+.sem {
+    width: 100%;
+    height: 50rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+}
+
+a:hover {
+    color: rgb(211, 205, 205);
+    transition: all .5s;
+}
+
+h3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sem img {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.img-1 {
+    float: left;
+    position: relative;
+
+}
+
+.front-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.back-1 {
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -2;
+    box-sizing: border-box;
+
+}
+
+.back-sunject-1 {
+    padding: 0 60px;
+}
+
+ol li {
+    margin: 50px 0;
+    font-weight: bolder;
+}
+
+.img-1:hover .front-1 {
+    opacity: 0;
+}
+
+.about {
+    width: 100%;
+    height: 24rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.about-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 3rem;
+    line-height: 2.5rem;
+    font-weight: bolder;
+}
+
+.selection-web {
+    width: 100%;
+    height: 24rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.selection-app {
+
+    width: 100%;
+    height: 24rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.select-left-web {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 3rem;
+    line-height: 2.5rem;
+    font-weight: bolder;
+}
+
+.select-left-app {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 3rem;
+    line-height: 2.5rem;
+    font-weight: bolder;
+}
+
+.benefit {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: bolder;
+}
+
+.special {
+    width: 100%;
+    height: 23rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+pre {
+    line-height: 2.5rem;
+    font-weight: bolder;
+}
+
+.sp-img {
+    height: 23rem;
+    padding-left: 8rem;
+}
+
+.sp-left {
+    margin-bottom: 1rem;
+    height: 23rem;
+    padding-left: 5rem;
+}
+
+.get {
+    height: 21.1rem;
+    margin-bottom: 1rem;
+    padding-left: 25rem
+}
+
+.form {
+    margin-bottom: 1rem;
+    padding: .5rem .5rem .5rem .5rem;
+    border: .13rem solid black;
+    border-radius: .3rem;
+    background-color: rgb(243, 241, 241);
+}
+.footer {
+
+    margin-top: 4rem;
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(33, 9, 58);
+}
+
+.copy {
+    background-color: rgb(33, 9, 58);
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+.submit {
+    padding: .5rem .5rem .5rem .5rem;
+    border: .13rem solid black;
+    border-radius: .3rem;
+    background-color: rgb(243, 241, 241);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+@media (max-width:1239px) {
+
+    .get {
+        padding-left: 10rem;
+    }
+
+    .image {
+        height: 10rem;
+        border-radius: 10rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .right {
+        height: 20rem;
+        width: 90%;
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+    }
+
+    img {
+        height: 20rem;
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
+    .sem {
+        height: 63em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    h3 {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    ol li {
+        margin: 30px 0;
+    }
+
+    nav {
+        padding-right: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        padding-left: .4rem;
+    }
+
+    .left {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .img-left {
+
+        padding-left: 10rem;
+        padding-right: 7rem;   
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 1rem;
+        height: 38rem;
+    }
+    .about p{
+        padding-top: 0rem;
+    }
+
+    .selection-web {
+
+        height: 40rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+    .img-web{
+        padding-left: 10rem;
+        padding-right: 7rem;
+    }
+    .selection-app {
+
+        height: 40rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+    .img-app{
+        padding-left: 10rem;
+        padding-right: 7rem;
+    }
+    .special {
+        width: 100%;
+        height: 40rem;
+        margin-bottom: 0rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0rem;
+    }
+    .sp-img{
+        padding-left: 15rem;
+        padding-right: 12rem;
+    }
+    .hending{
+        margin-top: 0rem;
+    }
+    
+    .advantage{
+        margin-top: 0rem;
+    }
+    
+}
+@media (max-width:550px) {
+
+    .get {
+        padding-left: 3rem;
+    }
+    li a{
+        display: none;
+    }
+    
+    .important{
+        padding-top: 3rem;
+    }
+
+    .sem {
+        height: 130em;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+    h3{
+        margin-top: 0rem;
+    }
+    .about {
+        height: 50rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 1rem;
+        
+    }
+    .img-left {
+
+        padding-left: 5rem;
+        padding-right: 3.5rem;   
+    }
+    .selection-web {
+
+        height: 50rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+    .img-web{
+        padding-left: 5rem;
+        padding-right: 1rem;
+    }
+    .selection-app {
+
+        height: 45rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+    .img-app{
+        padding-left: 5rem;
+        padding-right: 1rem;
+    }
+    .Specializations{
+        margin-top: 1.5rem;
+    }
+    
+    .sp-left {
+        margin-bottom: 1rem;
+        height: 23rem;
+        padding-left: 0rem;
+    }
+    .sp-img{
+        padding-left: 7.5rem;
+        padding-right: 6rem;
+    }
+}
+@media (max-width:420px) {
+    
+    .get {
+        padding-left: 3rem;
+    }
+    li a{
+        display: none;
+    }
+    .important{
+        margin-top: 7rem;
+    }
+    .right {
+        height: 15rem;
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    nav img .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sem {
+        height: 130em;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    h3{
+        margin-top: 2rem;
+    }
+    .about {
+        height: 42.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+        
+    }
+    .about-right{
+        line-height: 1.5rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .img-left {
+
+        padding-left: 2rem;
+        padding-right: 0rem;   
+    }
+    .selection-web {
+
+        height: 48rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+    .select-left-web{
+        line-height: 1.5rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .img-web{
+        padding-left: 1rem;
+        padding-right: 0rem;
+        padding-top: 1.5rem;
+        margin-right: 0rem;
+    }
+    .selection-app {
+
+        height: 45rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+    .select-left-app{
+        line-height: 1.5rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .img-app{
+        padding-left: 1rem;
+        padding-right: 0rem;
+    }
+    .Specializations{
+        margin-top: 1.5rem;
+    }
+    
+    .sp-left {
+        margin-bottom: 1rem;
+        height: 23rem;
+        padding-left: 0rem;
+    }
+    .sp-img{
+        padding-left: 7.5rem;
+        padding-right: 6rem;
+    }
+    .benefit {
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    .special{
+        height: 22rem;
+    }
+    .sp-img{
+        display: none;
+    }
+}
+
